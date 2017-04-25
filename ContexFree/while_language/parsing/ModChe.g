@@ -17,30 +17,30 @@ package while_language.parsing;
 }
 
 
-program returns [Statement value]
-    : s=statement EOF { $value = s; }
+program returns [String str]
+    : s=note EOF { $str = s; }
     ;
 
-statement returns [Statement value]
-    : s=base_statement       { $value = s; }
-      ( ';' s=base_statement { $value = new SeqStatement($value,s); } )*
+note returns [Statement str]
+    : s=base_note       { $str = s; }
+      ( ';' s=base_note { $str = new SeqStatement($str,s); } )*
     ;
 
-base_statement returns [Statement value]
+base_note returns [Statement str]
     : e=arith_expr
     ;
 
   
-arith_expr returns [ArithExpr value]
-    : e=mult_arith_expr       { $value = e; }
-       '+' e=mult_arith_expr 
+arith_expr returns [ArithExpr str]
+    : e=add_arith_expr       { $str = e; }
+      '+' e=add_arith_expr 
     ;
 
-mult_arith_expr returns [ArithExpr value]
-    : e=base_arith_expr       { $value = e; }
+add_arith_expr returns [ArithExpr str]
+    : e=base_arith_expr       { $str = e; }
     ;
 
-base_arith_expr returns [ArithExpr value]
+base_arith_expr returns [ArithExpr str]
     : P 
     ;
 
