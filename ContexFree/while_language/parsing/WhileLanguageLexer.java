@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g 2017-04-21 11:14:22
+// $ANTLR 3.5.1 C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g 2017-04-25 16:46:44
 
 package while_language.parsing;
 
@@ -27,6 +27,11 @@ public class WhileLanguageLexer extends Lexer {
 	public static final int T__19=19;
 	public static final int T__20=20;
 	public static final int T__21=21;
+	public static final int T__22=22;
+	public static final int T__23=23;
+	public static final int T__24=24;
+	public static final int T__25=25;
+	public static final int T__26=26;
 	public static final int ID=4;
 	public static final int NUM=5;
 	public static final int WS=6;
@@ -71,10 +76,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__8;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:13:6: ( '&&' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:13:8: '&&'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:13:6: ( '!=' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:13:8: '!='
 			{
-			match("&&"); 
+			match("!="); 
 
 			}
 
@@ -92,10 +97,11 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__9;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:14:6: ( '*' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:14:8: '*'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:14:6: ( '&&' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:14:8: '&&'
 			{
-			match('*'); 
+			match("&&"); 
+
 			}
 
 			state.type = _type;
@@ -112,10 +118,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__10;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:15:7: ( '+' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:15:9: '+'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:15:7: ( '*' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:15:9: '*'
 			{
-			match('+'); 
+			match('*'); 
 			}
 
 			state.type = _type;
@@ -132,10 +138,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__11;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:16:7: ( '-' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:16:9: '-'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:16:7: ( '+' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:16:9: '+'
 			{
-			match('-'); 
+			match('+'); 
 			}
 
 			state.type = _type;
@@ -152,11 +158,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__12;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:17:7: ( ':=' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:17:9: ':='
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:17:7: ( '-' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:17:9: '-'
 			{
-			match(":="); 
-
+			match('-'); 
 			}
 
 			state.type = _type;
@@ -173,10 +178,11 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__13;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:18:7: ( ';' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:18:9: ';'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:18:7: ( ':=' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:18:9: ':='
 			{
-			match(';'); 
+			match(":="); 
+
 			}
 
 			state.type = _type;
@@ -193,10 +199,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__14;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:19:7: ( '=' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:19:9: '='
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:19:7: ( ';' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:19:9: ';'
 			{
-			match('='); 
+			match(';'); 
 			}
 
 			state.type = _type;
@@ -213,10 +219,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__15;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:20:7: ( 'else' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:20:9: 'else'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:20:7: ( '<=' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:20:9: '<='
 			{
-			match("else"); 
+			match("<="); 
 
 			}
 
@@ -234,11 +240,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__16;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:21:7: ( 'false' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:21:9: 'false'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:21:7: ( '=' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:21:9: '='
 			{
-			match("false"); 
-
+			match('='); 
 			}
 
 			state.type = _type;
@@ -255,10 +260,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__17;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:22:7: ( 'if' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:22:9: 'if'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:22:7: ( 'do' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:22:9: 'do'
 			{
-			match("if"); 
+			match("do"); 
 
 			}
 
@@ -276,10 +281,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__18;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:23:7: ( 'then' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:23:9: 'then'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:23:7: ( 'else' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:23:9: 'else'
 			{
-			match("then"); 
+			match("else"); 
 
 			}
 
@@ -297,10 +302,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__19;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:24:7: ( 'true' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:24:9: 'true'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:24:7: ( 'false' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:24:9: 'false'
 			{
-			match("true"); 
+			match("false"); 
 
 			}
 
@@ -318,10 +323,11 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__20;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:25:7: ( '{' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:25:9: '{'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:25:7: ( 'if' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:25:9: 'if'
 			{
-			match('{'); 
+			match("if"); 
+
 			}
 
 			state.type = _type;
@@ -338,10 +344,11 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__21;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:26:7: ( '}' )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:26:9: '}'
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:26:7: ( 'then' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:26:9: 'then'
 			{
-			match('}'); 
+			match("then"); 
+
 			}
 
 			state.type = _type;
@@ -353,15 +360,118 @@ public class WhileLanguageLexer extends Lexer {
 	}
 	// $ANTLR end "T__21"
 
+	// $ANTLR start "T__22"
+	public final void mT__22() throws RecognitionException {
+		try {
+			int _type = T__22;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:27:7: ( 'true' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:27:9: 'true'
+			{
+			match("true"); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__22"
+
+	// $ANTLR start "T__23"
+	public final void mT__23() throws RecognitionException {
+		try {
+			int _type = T__23;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:28:7: ( 'while' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:28:9: 'while'
+			{
+			match("while"); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__23"
+
+	// $ANTLR start "T__24"
+	public final void mT__24() throws RecognitionException {
+		try {
+			int _type = T__24;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:29:7: ( '{' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:29:9: '{'
+			{
+			match('{'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__24"
+
+	// $ANTLR start "T__25"
+	public final void mT__25() throws RecognitionException {
+		try {
+			int _type = T__25;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:30:7: ( '||' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:30:9: '||'
+			{
+			match("||"); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__25"
+
+	// $ANTLR start "T__26"
+	public final void mT__26() throws RecognitionException {
+		try {
+			int _type = T__26;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:31:7: ( '}' )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:31:9: '}'
+			{
+			match('}'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__26"
+
 	// $ANTLR start "NUM"
 	public final void mNUM() throws RecognitionException {
 		try {
 			int _type = NUM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:67:5: ( ( '0' .. '9' )+ )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:67:7: ( '0' .. '9' )+
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:75:5: ( ( '0' .. '9' )+ )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:75:7: ( '0' .. '9' )+
 			{
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:67:7: ( '0' .. '9' )+
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:75:7: ( '0' .. '9' )+
 			int cnt1=0;
 			loop1:
 			while (true) {
@@ -410,8 +520,8 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = ID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:68:5: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )* )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:68:7: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:76:5: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )* )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:76:7: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
 			{
 			if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 				input.consume();
@@ -421,7 +531,7 @@ public class WhileLanguageLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:68:26: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:76:26: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
 			loop2:
 			while (true) {
 				int alt2=2;
@@ -466,10 +576,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:70:5: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:70:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:78:5: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:78:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
 			{
-			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:70:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
+			// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:78:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
 			int cnt3=0;
 			loop3:
 			while (true) {
@@ -516,138 +626,69 @@ public class WhileLanguageLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:8: ( T__7 | T__8 | T__9 | T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | NUM | ID | WS )
-		int alt4=18;
+		// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:8: ( T__7 | T__8 | T__9 | T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | NUM | ID | WS )
+		int alt4=23;
 		switch ( input.LA(1) ) {
 		case '!':
 			{
-			alt4=1;
+			int LA4_1 = input.LA(2);
+			if ( (LA4_1=='=') ) {
+				alt4=2;
+			}
+
+			else {
+				alt4=1;
+			}
+
 			}
 			break;
 		case '&':
 			{
-			alt4=2;
+			alt4=3;
 			}
 			break;
 		case '*':
 			{
-			alt4=3;
+			alt4=4;
 			}
 			break;
 		case '+':
 			{
-			alt4=4;
+			alt4=5;
 			}
 			break;
 		case '-':
 			{
-			alt4=5;
+			alt4=6;
 			}
 			break;
 		case ':':
 			{
-			alt4=6;
+			alt4=7;
 			}
 			break;
 		case ';':
 			{
-			alt4=7;
+			alt4=8;
+			}
+			break;
+		case '<':
+			{
+			alt4=9;
 			}
 			break;
 		case '=':
 			{
-			alt4=8;
+			alt4=10;
 			}
 			break;
-		case 'e':
-			{
-			int LA4_9 = input.LA(2);
-			if ( (LA4_9=='l') ) {
-				int LA4_18 = input.LA(3);
-				if ( (LA4_18=='s') ) {
-					int LA4_23 = input.LA(4);
-					if ( (LA4_23=='e') ) {
-						int LA4_28 = input.LA(5);
-						if ( ((LA4_28 >= '0' && LA4_28 <= '9')||(LA4_28 >= 'A' && LA4_28 <= 'Z')||(LA4_28 >= 'a' && LA4_28 <= 'z')) ) {
-							alt4=17;
-						}
-
-						else {
-							alt4=9;
-						}
-
-					}
-
-					else {
-						alt4=17;
-					}
-
-				}
-
-				else {
-					alt4=17;
-				}
-
-			}
-
-			else {
-				alt4=17;
-			}
-
-			}
-			break;
-		case 'f':
+		case 'd':
 			{
 			int LA4_10 = input.LA(2);
-			if ( (LA4_10=='a') ) {
-				int LA4_19 = input.LA(3);
-				if ( (LA4_19=='l') ) {
-					int LA4_24 = input.LA(4);
-					if ( (LA4_24=='s') ) {
-						int LA4_29 = input.LA(5);
-						if ( (LA4_29=='e') ) {
-							int LA4_33 = input.LA(6);
-							if ( ((LA4_33 >= '0' && LA4_33 <= '9')||(LA4_33 >= 'A' && LA4_33 <= 'Z')||(LA4_33 >= 'a' && LA4_33 <= 'z')) ) {
-								alt4=17;
-							}
-
-							else {
-								alt4=10;
-							}
-
-						}
-
-						else {
-							alt4=17;
-						}
-
-					}
-
-					else {
-						alt4=17;
-					}
-
-				}
-
-				else {
-					alt4=17;
-				}
-
-			}
-
-			else {
-				alt4=17;
-			}
-
-			}
-			break;
-		case 'i':
-			{
-			int LA4_11 = input.LA(2);
-			if ( (LA4_11=='f') ) {
-				int LA4_20 = input.LA(3);
-				if ( ((LA4_20 >= '0' && LA4_20 <= '9')||(LA4_20 >= 'A' && LA4_20 <= 'Z')||(LA4_20 >= 'a' && LA4_20 <= 'z')) ) {
-					alt4=17;
+			if ( (LA4_10=='o') ) {
+				int LA4_24 = input.LA(3);
+				if ( ((LA4_24 >= '0' && LA4_24 <= '9')||(LA4_24 >= 'A' && LA4_24 <= 'Z')||(LA4_24 >= 'a' && LA4_24 <= 'z')) ) {
+					alt4=22;
 				}
 
 				else {
@@ -657,23 +698,22 @@ public class WhileLanguageLexer extends Lexer {
 			}
 
 			else {
-				alt4=17;
+				alt4=22;
 			}
 
 			}
 			break;
-		case 't':
+		case 'e':
 			{
-			switch ( input.LA(2) ) {
-			case 'h':
-				{
-				int LA4_21 = input.LA(3);
-				if ( (LA4_21=='e') ) {
-					int LA4_26 = input.LA(4);
-					if ( (LA4_26=='n') ) {
-						int LA4_30 = input.LA(5);
-						if ( ((LA4_30 >= '0' && LA4_30 <= '9')||(LA4_30 >= 'A' && LA4_30 <= 'Z')||(LA4_30 >= 'a' && LA4_30 <= 'z')) ) {
-							alt4=17;
+			int LA4_11 = input.LA(2);
+			if ( (LA4_11=='l') ) {
+				int LA4_25 = input.LA(3);
+				if ( (LA4_25=='s') ) {
+					int LA4_32 = input.LA(4);
+					if ( (LA4_32=='e') ) {
+						int LA4_38 = input.LA(5);
+						if ( ((LA4_38 >= '0' && LA4_38 <= '9')||(LA4_38 >= 'A' && LA4_38 <= 'Z')||(LA4_38 >= 'a' && LA4_38 <= 'z')) ) {
+							alt4=22;
 						}
 
 						else {
@@ -683,59 +723,213 @@ public class WhileLanguageLexer extends Lexer {
 					}
 
 					else {
-						alt4=17;
+						alt4=22;
 					}
 
 				}
 
 				else {
-					alt4=17;
+					alt4=22;
+				}
+
+			}
+
+			else {
+				alt4=22;
+			}
+
+			}
+			break;
+		case 'f':
+			{
+			int LA4_12 = input.LA(2);
+			if ( (LA4_12=='a') ) {
+				int LA4_26 = input.LA(3);
+				if ( (LA4_26=='l') ) {
+					int LA4_33 = input.LA(4);
+					if ( (LA4_33=='s') ) {
+						int LA4_39 = input.LA(5);
+						if ( (LA4_39=='e') ) {
+							int LA4_44 = input.LA(6);
+							if ( ((LA4_44 >= '0' && LA4_44 <= '9')||(LA4_44 >= 'A' && LA4_44 <= 'Z')||(LA4_44 >= 'a' && LA4_44 <= 'z')) ) {
+								alt4=22;
+							}
+
+							else {
+								alt4=13;
+							}
+
+						}
+
+						else {
+							alt4=22;
+						}
+
+					}
+
+					else {
+						alt4=22;
+					}
+
+				}
+
+				else {
+					alt4=22;
+				}
+
+			}
+
+			else {
+				alt4=22;
+			}
+
+			}
+			break;
+		case 'i':
+			{
+			int LA4_13 = input.LA(2);
+			if ( (LA4_13=='f') ) {
+				int LA4_27 = input.LA(3);
+				if ( ((LA4_27 >= '0' && LA4_27 <= '9')||(LA4_27 >= 'A' && LA4_27 <= 'Z')||(LA4_27 >= 'a' && LA4_27 <= 'z')) ) {
+					alt4=22;
+				}
+
+				else {
+					alt4=14;
+				}
+
+			}
+
+			else {
+				alt4=22;
+			}
+
+			}
+			break;
+		case 't':
+			{
+			switch ( input.LA(2) ) {
+			case 'h':
+				{
+				int LA4_28 = input.LA(3);
+				if ( (LA4_28=='e') ) {
+					int LA4_35 = input.LA(4);
+					if ( (LA4_35=='n') ) {
+						int LA4_40 = input.LA(5);
+						if ( ((LA4_40 >= '0' && LA4_40 <= '9')||(LA4_40 >= 'A' && LA4_40 <= 'Z')||(LA4_40 >= 'a' && LA4_40 <= 'z')) ) {
+							alt4=22;
+						}
+
+						else {
+							alt4=15;
+						}
+
+					}
+
+					else {
+						alt4=22;
+					}
+
+				}
+
+				else {
+					alt4=22;
 				}
 
 				}
 				break;
 			case 'r':
 				{
-				int LA4_22 = input.LA(3);
-				if ( (LA4_22=='u') ) {
-					int LA4_27 = input.LA(4);
-					if ( (LA4_27=='e') ) {
-						int LA4_31 = input.LA(5);
-						if ( ((LA4_31 >= '0' && LA4_31 <= '9')||(LA4_31 >= 'A' && LA4_31 <= 'Z')||(LA4_31 >= 'a' && LA4_31 <= 'z')) ) {
-							alt4=17;
+				int LA4_29 = input.LA(3);
+				if ( (LA4_29=='u') ) {
+					int LA4_36 = input.LA(4);
+					if ( (LA4_36=='e') ) {
+						int LA4_41 = input.LA(5);
+						if ( ((LA4_41 >= '0' && LA4_41 <= '9')||(LA4_41 >= 'A' && LA4_41 <= 'Z')||(LA4_41 >= 'a' && LA4_41 <= 'z')) ) {
+							alt4=22;
 						}
 
 						else {
-							alt4=13;
+							alt4=16;
 						}
 
 					}
 
 					else {
-						alt4=17;
+						alt4=22;
 					}
 
 				}
 
 				else {
-					alt4=17;
+					alt4=22;
 				}
 
 				}
 				break;
 			default:
-				alt4=17;
+				alt4=22;
 			}
+			}
+			break;
+		case 'w':
+			{
+			int LA4_15 = input.LA(2);
+			if ( (LA4_15=='h') ) {
+				int LA4_30 = input.LA(3);
+				if ( (LA4_30=='i') ) {
+					int LA4_37 = input.LA(4);
+					if ( (LA4_37=='l') ) {
+						int LA4_42 = input.LA(5);
+						if ( (LA4_42=='e') ) {
+							int LA4_47 = input.LA(6);
+							if ( ((LA4_47 >= '0' && LA4_47 <= '9')||(LA4_47 >= 'A' && LA4_47 <= 'Z')||(LA4_47 >= 'a' && LA4_47 <= 'z')) ) {
+								alt4=22;
+							}
+
+							else {
+								alt4=17;
+							}
+
+						}
+
+						else {
+							alt4=22;
+						}
+
+					}
+
+					else {
+						alt4=22;
+					}
+
+				}
+
+				else {
+					alt4=22;
+				}
+
+			}
+
+			else {
+				alt4=22;
+			}
+
 			}
 			break;
 		case '{':
 			{
-			alt4=14;
+			alt4=18;
+			}
+			break;
+		case '|':
+			{
+			alt4=19;
 			}
 			break;
 		case '}':
 			{
-			alt4=15;
+			alt4=20;
 			}
 			break;
 		case '0':
@@ -749,7 +943,7 @@ public class WhileLanguageLexer extends Lexer {
 		case '8':
 		case '9':
 			{
-			alt4=16;
+			alt4=21;
 			}
 			break;
 		case 'A':
@@ -781,7 +975,6 @@ public class WhileLanguageLexer extends Lexer {
 		case 'a':
 		case 'b':
 		case 'c':
-		case 'd':
 		case 'g':
 		case 'h':
 		case 'j':
@@ -796,12 +989,11 @@ public class WhileLanguageLexer extends Lexer {
 		case 's':
 		case 'u':
 		case 'v':
-		case 'w':
 		case 'x':
 		case 'y':
 		case 'z':
 			{
-			alt4=17;
+			alt4=22;
 			}
 			break;
 		case '\t':
@@ -809,7 +1001,7 @@ public class WhileLanguageLexer extends Lexer {
 		case '\r':
 		case ' ':
 			{
-			alt4=18;
+			alt4=23;
 			}
 			break;
 		default:
@@ -924,21 +1116,56 @@ public class WhileLanguageLexer extends Lexer {
 				}
 				break;
 			case 16 :
-				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:97: NUM
+				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:97: T__22
+				{
+				mT__22(); 
+
+				}
+				break;
+			case 17 :
+				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:103: T__23
+				{
+				mT__23(); 
+
+				}
+				break;
+			case 18 :
+				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:109: T__24
+				{
+				mT__24(); 
+
+				}
+				break;
+			case 19 :
+				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:115: T__25
+				{
+				mT__25(); 
+
+				}
+				break;
+			case 20 :
+				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:121: T__26
+				{
+				mT__26(); 
+
+				}
+				break;
+			case 21 :
+				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:127: NUM
 				{
 				mNUM(); 
 
 				}
 				break;
-			case 17 :
-				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:101: ID
+			case 22 :
+				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:131: ID
 				{
 				mID(); 
 
 				}
 				break;
-			case 18 :
-				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:104: WS
+			case 23 :
+				// C:\\Users\\Kristian Krarup\\Documents\\ContextFree\\ContexFree\\while_language\\parsing\\WhileLanguage.g:1:134: WS
 				{
 				mWS(); 
 

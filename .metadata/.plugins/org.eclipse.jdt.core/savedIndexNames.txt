@@ -10,7 +10,6 @@ INDEX VERSION 1.130+C:\Users\Kristian Krarup\Documents\ContextFree\.metadata\.pl
 3643810303.index
 2911469802.index
 843494433.index
-1878117989.index
 1525087677.index
 1199826107.index
 449440424.index

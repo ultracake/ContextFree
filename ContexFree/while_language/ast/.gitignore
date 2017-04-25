@@ -15,3 +15,5 @@
 /Statement.class
 /LargerExpr.class
 /WhileLoop.class
+/NotEqualsExpr.class
+/LogExpr.class

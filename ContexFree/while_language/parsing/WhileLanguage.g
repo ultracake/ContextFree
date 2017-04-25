@@ -27,11 +27,17 @@ statement returns [Statement value]
 
 base_statement returns [Statement value]
     : ID ':=' e=arith_expr                      { $value = new AssignStatement($ID.getText(), e); }
-    | 'if' c=bool_expr 'then' s1=base_statement
+    | 'if' c=bool_expr_log 'then' s1=base_statement
       'else' s2=base_statement                  { $value = new IfStatement(c,s1,s2); }
     | '{' s=statement '}'                       { $value = s; }
+    
+    | 'while' c=bool_expr_log 'do' s1=base_statement { $value = new WhileLoop(c,s1); }
     ;
 
+bool_expr_log returns [BoolExpr value]
+    : e=bool_expr       { $value = e; }
+      ( '||' e=bool_expr  { $value = new LogExpr($value,e); } )*
+    ;
 bool_expr returns [BoolExpr value]
     : e=literal       { $value = e; }
       ( '&&' e=literal { $value = new AndExpr($value,e); } )*
@@ -39,13 +45,15 @@ bool_expr returns [BoolExpr value]
 
 literal returns [BoolExpr value]
     : e=base_bool_expr    { $value = e; }
-    | '!' e=literal { $value = new NotExpr(e); }
+    | '!' e=literal { $value = new NotExpr(e); }*
     ;
 
 base_bool_expr returns [BoolExpr value]
     : 'true'                             { $value = new BoolValueExpr(true); }
     | 'false'                            { $value = new BoolValueExpr(false); }
     | e1=arith_expr '=' e2=arith_expr  { $value = new EqualsExpr(e1,e2); }
+    | e1=arith_expr '<=' e2=arith_expr  { $value = new LargerExpr(e1,e2); }
+    | e1=arith_expr '!=' e2=arith_expr  { $value = new NotEqualsExpr(e1,e2); }
     ;
 
 arith_expr returns [ArithExpr value]

@@ -7,5 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="while_language.WhileLanguage"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="while_language/test/program2.while"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ContexFree"/>
 </launchConfiguration>
