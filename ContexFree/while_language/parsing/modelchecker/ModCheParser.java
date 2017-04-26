@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g 2017-04-26 11:10:48
+// $ANTLR 3.5.1 C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g 2017-04-26 17:01:47
 
 package while_language.parsing;
 
@@ -46,12 +46,12 @@ public class ModCheParser extends Parser {
 
 
 	// $ANTLR start "program"
-	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:19:1: program returns [String str] : s= note EOF ;
-	public final String program() throws RecognitionException {
-		String str = null;
+	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:19:1: program returns [Note note] : s= note EOF ;
+	public final Note program() throws RecognitionException {
+		Note note = null;
 
 
-		Statement s =null;
+		Note s =null;
 
 		try {
 			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:20:5: (s= note EOF )
@@ -62,7 +62,7 @@ public class ModCheParser extends Parser {
 			state._fsp--;
 
 			match(input,EOF,FOLLOW_EOF_in_program51); 
-			 str = s; 
+			 note = s; 
 			}
 
 		}
@@ -73,19 +73,19 @@ public class ModCheParser extends Parser {
 		finally {
 			// do for sure before leaving
 		}
-		return str;
+		return note;
 	}
 	// $ANTLR end "program"
 
 
 
 	// $ANTLR start "note"
-	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:23:1: note returns [Statement str] : s= base_note ( ';' s= base_note )* ;
-	public final Statement note() throws RecognitionException {
-		Statement str = null;
+	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:23:1: note returns [Note note] : s= base_note ( ';' s= base_note )* ;
+	public final Note note() throws RecognitionException {
+		Note note = null;
 
 
-		Statement s =null;
+		Note s =null;
 
 		try {
 			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:24:5: (s= base_note ( ';' s= base_note )* )
@@ -95,7 +95,7 @@ public class ModCheParser extends Parser {
 			s=base_note();
 			state._fsp--;
 
-			 str = s; 
+			 note = s; 
 			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:25:7: ( ';' s= base_note )*
 			loop1:
 			while (true) {
@@ -114,7 +114,7 @@ public class ModCheParser extends Parser {
 					s=base_note();
 					state._fsp--;
 
-					 str = new SeqStatement(str,s); 
+					 note = new Note(note,s); 
 					}
 					break;
 
@@ -133,16 +133,16 @@ public class ModCheParser extends Parser {
 		finally {
 			// do for sure before leaving
 		}
-		return str;
+		return note;
 	}
 	// $ANTLR end "note"
 
 
 
 	// $ANTLR start "base_note"
-	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:28:1: base_note returns [Statement str] : StateID ':=' e= arith_expr ;
-	public final Statement base_note() throws RecognitionException {
-		Statement str = null;
+	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:28:1: base_note returns [Note note] : StateID ':=' e= arith_expr ;
+	public final Note base_note() throws RecognitionException {
+		Note note = null;
 
 
 		Token StateID1=null;
@@ -158,7 +158,7 @@ public class ModCheParser extends Parser {
 			e=arith_expr();
 			state._fsp--;
 
-			 str = new AssignStatement(StateID1.getText(), e); 
+			 note = new Note(StateID1.getText(), e); 
 			}
 
 		}
@@ -169,16 +169,16 @@ public class ModCheParser extends Parser {
 		finally {
 			// do for sure before leaving
 		}
-		return str;
+		return note;
 	}
 	// $ANTLR end "base_note"
 
 
 
 	// $ANTLR start "arith_expr"
-	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:32:1: arith_expr returns [ArithExpr str] : e= base_arith_expr '+' e= base_arith_expr ;
+	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:32:1: arith_expr returns [ArithExpr note] : e= base_arith_expr '+' e= base_arith_expr ;
 	public final ArithExpr arith_expr() throws RecognitionException {
-		ArithExpr str = null;
+		ArithExpr note = null;
 
 
 		ArithExpr e =null;
@@ -187,17 +187,17 @@ public class ModCheParser extends Parser {
 			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:33:5: (e= base_arith_expr '+' e= base_arith_expr )
 			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:33:7: e= base_arith_expr '+' e= base_arith_expr
 			{
-			pushFollow(FOLLOW_base_arith_expr_in_arith_expr168);
+			pushFollow(FOLLOW_base_arith_expr_in_arith_expr163);
 			e=base_arith_expr();
 			state._fsp--;
 
-			 str = e; 
-			match(input,7,FOLLOW_7_in_arith_expr184); 
-			pushFollow(FOLLOW_base_arith_expr_in_arith_expr188);
+			 note = e; 
+			match(input,7,FOLLOW_7_in_arith_expr179); 
+			pushFollow(FOLLOW_base_arith_expr_in_arith_expr183);
 			e=base_arith_expr();
 			state._fsp--;
 
-			 str = new addExpr(str,e); 
+			 note = new addExpr(note,e); 
 			}
 
 		}
@@ -208,16 +208,16 @@ public class ModCheParser extends Parser {
 		finally {
 			// do for sure before leaving
 		}
-		return str;
+		return note;
 	}
 	// $ANTLR end "arith_expr"
 
 
 
 	// $ANTLR start "base_arith_expr"
-	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:37:1: base_arith_expr returns [ArithExpr str] : P StateID ;
+	// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:37:1: base_arith_expr returns [ArithExpr note] : P StateID ;
 	public final ArithExpr base_arith_expr() throws RecognitionException {
-		ArithExpr str = null;
+		ArithExpr note = null;
 
 
 		Token P2=null;
@@ -227,10 +227,10 @@ public class ModCheParser extends Parser {
 			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:38:5: ( P StateID )
 			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:38:7: P StateID
 			{
-			P2=(Token)match(input,P,FOLLOW_P_in_base_arith_expr214); 
-			 str = new PExpr(P2.getText()); 
-			StateID3=(Token)match(input,StateID,FOLLOW_StateID_in_base_arith_expr224); 
-			 str = new IdExpr(StateID3.getText()); 
+			P2=(Token)match(input,P,FOLLOW_P_in_base_arith_expr209); 
+			 note = new PExpr(P2.getText()); 
+			StateID3=(Token)match(input,StateID,FOLLOW_StateID_in_base_arith_expr219); 
+			 note = new IdExpr(StateID3.getText()); 
 			}
 
 		}
@@ -241,7 +241,7 @@ public class ModCheParser extends Parser {
 		finally {
 			// do for sure before leaving
 		}
-		return str;
+		return note;
 	}
 	// $ANTLR end "base_arith_expr"
 
@@ -257,9 +257,9 @@ public class ModCheParser extends Parser {
 	public static final BitSet FOLLOW_StateID_in_base_note124 = new BitSet(new long[]{0x0000000000000100L});
 	public static final BitSet FOLLOW_8_in_base_note126 = new BitSet(new long[]{0x0000000000000010L});
 	public static final BitSet FOLLOW_arith_expr_in_base_note130 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_base_arith_expr_in_arith_expr168 = new BitSet(new long[]{0x0000000000000080L});
-	public static final BitSet FOLLOW_7_in_arith_expr184 = new BitSet(new long[]{0x0000000000000010L});
-	public static final BitSet FOLLOW_base_arith_expr_in_arith_expr188 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_P_in_base_arith_expr214 = new BitSet(new long[]{0x0000000000000020L});
-	public static final BitSet FOLLOW_StateID_in_base_arith_expr224 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_base_arith_expr_in_arith_expr163 = new BitSet(new long[]{0x0000000000000080L});
+	public static final BitSet FOLLOW_7_in_arith_expr179 = new BitSet(new long[]{0x0000000000000010L});
+	public static final BitSet FOLLOW_base_arith_expr_in_arith_expr183 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_P_in_base_arith_expr209 = new BitSet(new long[]{0x0000000000000020L});
+	public static final BitSet FOLLOW_StateID_in_base_arith_expr219 = new BitSet(new long[]{0x0000000000000002L});
 }
