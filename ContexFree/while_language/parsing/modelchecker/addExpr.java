@@ -6,16 +6,18 @@ import while_language.ast.ArithExpr;
 
 public class addExpr extends ArithExpr {
 
-	public addExpr(ArithExpr str, ArithExpr e) {
-		// TODO Auto-generated constructor stub
-	}
-
+	private ArithExpr expression1;
+	private ArithExpr expression2;
 	
+	public addExpr(ArithExpr str, ArithExpr e) {
+		this.expression1 = e;
+		this.expression2 = str;
+	}
 
 	@Override
 	public int evaluate(Environment env) throws VariableNotDefinedException {
-		// TODO Auto-generated method stub
-		return 0;
+		return expression1.evaluate(env) + expression2.evaluate(env);
 	}
+
 
 }

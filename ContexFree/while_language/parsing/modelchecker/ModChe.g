@@ -22,11 +22,10 @@ program returns [Note note]
 
 note returns [Note note]
     : s=base_note       { $note = s; }
-      ( ';' s=base_note { $note = new Note($note,s); } )*
     ;
 
 base_note returns [Note note]
-    : StateID ':=' e=arith_expr       { $note = new Note($StateID.getText(), e); }
+    : StateID ':=' e=arith_expr       { $note = new FindNote($StateID.getText(), e); }
     ;
   
 arith_expr returns [ArithExpr note]
