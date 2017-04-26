@@ -1,4 +1,4 @@
-// $ANTLR 3.5.1 C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g 2017-04-25 19:24:14
+// $ANTLR 3.5.1 C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g 2017-04-26 11:10:48
 
 package while_language.parsing;
 
@@ -12,10 +12,12 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class ModCheLexer extends Lexer {
 	public static final int EOF=-1;
-	public static final int T__6=6;
 	public static final int T__7=7;
+	public static final int T__8=8;
+	public static final int T__9=9;
 	public static final int P=4;
-	public static final int WS=5;
+	public static final int StateID=5;
+	public static final int WS=6;
 
 	// delegates
 	// delegators
@@ -32,10 +34,10 @@ public class ModCheLexer extends Lexer {
 	}
 	@Override public String getGrammarFileName() { return "C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g"; }
 
-	// $ANTLR start "T__6"
-	public final void mT__6() throws RecognitionException {
+	// $ANTLR start "T__7"
+	public final void mT__7() throws RecognitionException {
 		try {
-			int _type = T__6;
+			int _type = T__7;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
 			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:12:6: ( '+' )
 			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:12:8: '+'
@@ -50,15 +52,36 @@ public class ModCheLexer extends Lexer {
 			// do for sure before leaving
 		}
 	}
-	// $ANTLR end "T__6"
+	// $ANTLR end "T__7"
 
-	// $ANTLR start "T__7"
-	public final void mT__7() throws RecognitionException {
+	// $ANTLR start "T__8"
+	public final void mT__8() throws RecognitionException {
 		try {
-			int _type = T__7;
+			int _type = T__8;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:13:6: ( ';' )
-			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:13:8: ';'
+			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:13:6: ( ':=' )
+			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:13:8: ':='
+			{
+			match(":="); 
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__8"
+
+	// $ANTLR start "T__9"
+	public final void mT__9() throws RecognitionException {
+		try {
+			int _type = T__9;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:14:6: ( ';' )
+			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:14:8: ';'
 			{
 			match(';'); 
 			}
@@ -70,14 +93,14 @@ public class ModCheLexer extends Lexer {
 			// do for sure before leaving
 		}
 	}
-	// $ANTLR end "T__7"
+	// $ANTLR end "T__9"
 
 	// $ANTLR start "P"
 	public final void mP() throws RecognitionException {
 		try {
 			int _type = P;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:48:3: ( 'p' | 'qr' | ' ' )
+			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:42:3: ( 'p' | 'qr' | ' ' )
 			int alt1=3;
 			switch ( input.LA(1) ) {
 			case 'p':
@@ -102,20 +125,20 @@ public class ModCheLexer extends Lexer {
 			}
 			switch (alt1) {
 				case 1 :
-					// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:48:5: 'p'
+					// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:42:5: 'p'
 					{
 					match('p'); 
 					}
 					break;
 				case 2 :
-					// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:48:11: 'qr'
+					// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:42:11: 'qr'
 					{
 					match("qr"); 
 
 					}
 					break;
 				case 3 :
-					// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:48:18: ' '
+					// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:42:18: ' '
 					{
 					match(' '); 
 					}
@@ -131,13 +154,40 @@ public class ModCheLexer extends Lexer {
 	}
 	// $ANTLR end "P"
 
+	// $ANTLR start "StateID"
+	public final void mStateID() throws RecognitionException {
+		try {
+			int _type = StateID;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:43:9: ( '1' .. '3' )
+			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:
+			{
+			if ( (input.LA(1) >= '1' && input.LA(1) <= '3') ) {
+				input.consume();
+			}
+			else {
+				MismatchedSetException mse = new MismatchedSetException(null,input);
+				recover(mse);
+				throw mse;
+			}
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "StateID"
+
 	// $ANTLR start "WS"
 	public final void mWS() throws RecognitionException {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:53:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:53:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:47:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+			// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:47:9: ( ' ' | '\\t' | '\\r' | '\\n' )
 			{
 			if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
 				input.consume();
@@ -161,35 +211,47 @@ public class ModCheLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:8: ( T__6 | T__7 | P | WS )
-		int alt2=4;
+		// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:8: ( T__7 | T__8 | T__9 | P | StateID | WS )
+		int alt2=6;
 		switch ( input.LA(1) ) {
 		case '+':
 			{
 			alt2=1;
 			}
 			break;
-		case ';':
+		case ':':
 			{
 			alt2=2;
+			}
+			break;
+		case ';':
+			{
+			alt2=3;
 			}
 			break;
 		case 'p':
 		case 'q':
 			{
-			alt2=3;
+			alt2=4;
 			}
 			break;
 		case ' ':
 			{
-			alt2=3;
+			alt2=4;
+			}
+			break;
+		case '1':
+		case '2':
+		case '3':
+			{
+			alt2=5;
 			}
 			break;
 		case '\t':
 		case '\n':
 		case '\r':
 			{
-			alt2=4;
+			alt2=6;
 			}
 			break;
 		default:
@@ -199,28 +261,42 @@ public class ModCheLexer extends Lexer {
 		}
 		switch (alt2) {
 			case 1 :
-				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:10: T__6
-				{
-				mT__6(); 
-
-				}
-				break;
-			case 2 :
-				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:15: T__7
+				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:10: T__7
 				{
 				mT__7(); 
 
 				}
 				break;
+			case 2 :
+				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:15: T__8
+				{
+				mT__8(); 
+
+				}
+				break;
 			case 3 :
-				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:20: P
+				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:20: T__9
+				{
+				mT__9(); 
+
+				}
+				break;
+			case 4 :
+				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:25: P
 				{
 				mP(); 
 
 				}
 				break;
-			case 4 :
-				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:22: WS
+			case 5 :
+				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:27: StateID
+				{
+				mStateID(); 
+
+				}
+				break;
+			case 6 :
+				// C:\\Users\\jacki\\workspace\\test2\\while_language\\parsing\\ModChe.g:1:35: WS
 				{
 				mWS(); 
 
